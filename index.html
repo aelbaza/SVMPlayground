@@ -31,7 +31,20 @@ limitations under the License.
  
   <title>A Support Vector Machine Playground</title>
   <link rel="stylesheet" href="bundle.css" >
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons" rel="stylesheet" type="text/css">
+  <!-- connect to domain of font files -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- optionally increase loading priority -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons">
+
+<!-- async CSS -->
+<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons">
+
+<!-- no-JS fallback -->
+<noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500|Material+Icons">
+</noscript>
+ 
 </head>
 
 <body>
